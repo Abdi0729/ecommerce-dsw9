@@ -40,6 +40,7 @@ app.use((req, res, next) => {
   next();
 });
 
+/*
 app.get('/', (req, res) => {
   res.send(`
     Hello World - [REEMPLAZAR POR SU NOMBRE]
@@ -47,7 +48,8 @@ app.get('/', (req, res) => {
     Puerto: ${port} | Entorno: ${process.env.NODE_ENV || 'development'}
   `);
 });
-// app.use('/',         productRoutes);
+*/
+app.use('/',         productRoutes);
 app.use('/cart',     cartRoutes);
 app.use('/checkout', checkoutRoutes);
 
